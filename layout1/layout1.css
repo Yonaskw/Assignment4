@@ -1,0 +1,54 @@
+body{
+    width: 960px;
+    margin: 20px auto 0 auto;
+}
+div, footer{
+    background: silver;
+}
+nav, section, main, footer{
+    display: grid;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+nav{
+    
+    grid-template: 80px / 200px 1fr;
+    grid-gap: 250px;
+}
+
+nav div:last-of-type{
+    height: 70px;
+    align-self: center;
+}
+
+section{
+    grid-template-rows: 200px; 
+}
+main{
+    background: #EDEDED;
+    height: 160px;
+    grid-template: 160px / repeat(2, 470px);
+    grid-gap: 20px;
+    align-content: center;
+    justify-content: space-evenly;
+}
+ul{
+    display: grid;
+    list-style: none;
+    justify-content: center;
+    grid-template-columns:repeat(4, 1fr);
+    background: silver;
+    
+}
+li{
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+footer{
+    height: 60px;
+    align-items: center;
+    justify-items: center;
+}
